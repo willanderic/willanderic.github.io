@@ -101,3 +101,37 @@ body{font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvet
   .hero-image{height:360px;object-position:center 30%}
   .container{padding:24px}
 }
+
+/* Footer styles */
+.wedding-footer {
+  background: var(--bg);
+  padding: 40px 0 20px 0;
+  text-align: center;
+}
+.footer-content {
+  display: inline-block;
+}
+.footer-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+.footer-line {
+  border: none;
+  border-top: 2px solid var(--accent);
+  width: 60%;
+  margin: 0.5rem auto 0.5rem auto;
+}
+.footer-date {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: var(--accent);
+  margin-top: 0.5rem;
+}
+
+.section-divider {
+  border-top: 3px solid var(--accent);
+  width: 90%;
+  display: block;
+}
