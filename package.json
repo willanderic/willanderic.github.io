@@ -1,0 +1,23 @@
+{
+  "name": "wedding-site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d ."
+  },
+  "dependencies": {
+    "marked": "^5.1.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "gh-pages": "^6.3.0",
+    "vite": "^5.1.0"
+  },
+  "homepage": "https://willanderic.github.io/"
+}
