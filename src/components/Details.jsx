@@ -11,9 +11,9 @@ export default function Details() {
         <strong>Time:</strong> 4:00 PM
       </p> */}
       <p>
-        <strong>Location:</strong> Roche Harbor Resort, San Juan Island, WA
+        <strong>Location:</strong> <a href="https://www.rocheharbor.com">Roche Harbor Resort</a>, San Juan Island, WA
       </p>
-      <p className="note">Formal invitation to follow. <i>Stay tuned to this website for updates!</i></p>
+      <p className="note">Formal invitation to follow. <i><b>Stay tuned to this website for updates!</b></i></p>
     </section>
   )
 }

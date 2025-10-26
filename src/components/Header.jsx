@@ -7,8 +7,7 @@ export default function Header() {
         <img src="/assets/couple.jpg" alt="Couple" className="hero-image" />
         <div className="hero-text">
           <div className="hero-names"><span className="hero-line">Eric & William</span></div>
-          <h1><span className="hero-line">We're Getting Married!</span></h1>
-          <p><span className="hero-line">Join us to celebrate</span></p>
+          <h1><span className="hero-line">We're getting married!</span></h1>
         </div>
       </div>
     </header>

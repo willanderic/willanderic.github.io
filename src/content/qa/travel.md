@@ -9,4 +9,4 @@ From Friday Harbor a short drive (~20 min) will get you to Roche Harbor.
 **Plane**: 
 Seaplanes fly directly in/out of Roche Harbor.
 
-Please see the attached PDF below (*Travel to Roche Harbor*)
+Please refer to [this PDF](/assets/uploads/travel.pdf) for more info.
