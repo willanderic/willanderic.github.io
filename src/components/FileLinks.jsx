@@ -3,8 +3,8 @@ import React from 'react'
 const files = [
   // Users can add filenames here after uploading to /assets/uploads
   { name: 'Travel to Roche Harbor (PDF)', path: '/assets/uploads/travel.pdf' },
-  { name: 'Lodging (PDF)', path: '/assets/uploads/lodging.pdf' },
-  { name: 'Roche Harbor Resort Room Descriptions (PDF)', path: '/assets/uploads/room-descriptions.pdf' }
+//   { name: 'Lodging (PDF)', path: '/assets/uploads/lodging.pdf' },
+//   { name: 'Roche Harbor Resort Room Descriptions (PDF)', path: '/assets/uploads/room-descriptions.pdf' }
 ]
 
 

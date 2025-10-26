@@ -12,8 +12,8 @@ export default function App() {
       <main>
         <Details />
         <QandA />
-        <RSVP />
         <FileLinks />
+        {/* <RSVP /> */}
       </main>
     </div>
   )

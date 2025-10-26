@@ -6,8 +6,9 @@ export default function Header() {
       <div className="hero">
         <img src="/assets/couple.jpg" alt="Couple" className="hero-image" />
         <div className="hero-text">
-          <h1>We're Getting Married!</h1>
-          <p>Join us at to celebrate</p>
+          <div className="hero-names"><span className="hero-line">Eric & William</span></div>
+          <h1><span className="hero-line">We're Getting Married!</span></h1>
+          <p><span className="hero-line">Join us to celebrate</span></p>
         </div>
       </div>
     </header>

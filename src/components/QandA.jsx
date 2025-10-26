@@ -1,9 +1,18 @@
 import React, { useState, useMemo } from 'react'
 import { marked } from 'marked'
 
+// Specify the static order of Q&A markdown files (filenames only)
+const QA_ORDER = [
+    'travel.md',
+    'where-to-stay.md',
+    'attire.md',
+    'indoors-outdoors.md',
+    'allergies.md',
+    '+1.md',
+    // Add more filenames as needed, in desired order
+]
+
 // Load all markdown files from ../content/qa as raw text (eagerly).
-// Files should live in `src/content/qa/*.md` and the first header line
-// will be treated as the question; the rest is the answer body.
 const modules = import.meta.glob('../content/qa/*.md', { eager: true, as: 'raw' })
 
 function parseMd(path, raw) {
@@ -32,7 +41,12 @@ export default function QandA() {
   const [open, setOpen] = useState(null)
 
   const items = useMemo(() => {
-    return Object.entries(modules).map(([path, raw]) => parseMd(path, raw))
+    // Parse all items
+    const parsed = Object.entries(modules).map(([path, raw]) => parseMd(path, raw))
+    // Sort by QA_ORDER
+    return QA_ORDER
+      .map(filename => parsed.find(item => item.path.endsWith(filename)))
+      .filter(Boolean)
   }, [])
 
   return (
