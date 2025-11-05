@@ -6,7 +6,7 @@ const Footer = () => (
     <div className="footer-content">
       <div className="footer-title">E&amp;W</div>
       <hr className="footer-line" />
-      <div className="footer-date">10.3.2026</div>
+      <div className="footer-date">10.03.2026</div>
     </div>
   </footer>
 );

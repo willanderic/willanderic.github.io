@@ -1,3 +1,28 @@
+/* Font imports */
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('/assets/fonts/BrandonGrotesque-Regular.woff2') format('woff2'),
+       url('/assets/fonts/BrandonGrotesque-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('/assets/fonts/BrandonGrotesque-Bold.woff2') format('woff2'),
+       url('/assets/fonts/BrandonGrotesque-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Crake';
+  src: url('/assets/fonts/Crake-Regular.woff2') format('woff2'),
+       url('/assets/fonts/Crake-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .site-root{
   --bg: #F7F3F0; /* light ivory */
   --card: #FFFFFF;
@@ -8,18 +33,18 @@
 }
 
 html,body{height:100%}
-body{font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:var(--bg); color:#222; margin:0}
+body{font-family: 'Brandon Grotesque', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:var(--bg); color:#222; margin:0}
 .container{max-width:var(--max-width);margin:0 auto;padding:64px 64px;display:flex;flex-direction:column;align-items:stretch}
 
 /* Header / Hero */
 .site-header .hero{position:relative;border-radius:12px;overflow:hidden;box-shadow:0 6px 24px rgba(20,20,20,0.06);width:100%;max-width:var(--max-width);margin:0 auto}
 .hero-image{width:100%;height:460px;object-fit:cover;object-position:center 35%;display:block}
 .hero-text{position:absolute;left:20px;bottom:20px;color:#ffffff;padding:18px 22px;max-width:420px;text-shadow: 1px 1px 2px black;z-index:2}
-.hero-text h1{font-family:'Playfair Display', serif;font-size:32px;margin:0;letter-spacing:0.6px;color:var(--accent)}
+.hero-text h1{font-family:'Crake', serif;font-size:32px;margin:0;letter-spacing:0.6px;color:var(--accent)}
 .hero-text p{margin:6px 0 0;font-size:14px;color:var(--muted)}
 
 /* Decorative names in hero */
-.hero-names{font-family:'Playfair Display', serif;font-size:18px;color:var(--accent-2);letter-spacing:1px;margin-bottom:8px}
+.hero-names{font-family:'Brandon Grotesque', serif;font-size:18px;color:var(--accent-2);letter-spacing:2px;margin-bottom:8px;font-weight: bold;}
 
 /* Highlight behind each line of hero text */
 .hero-line {
@@ -36,7 +61,7 @@ body{font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvet
   right: -0.12rem;
   top: 0.18rem;
   bottom: 0.08rem;
-  background: rgba(0,0,0,0.92);
+  background: rgba(35,35,35,0.92);
   transform: skew(-6deg);
   z-index: -1; /* place behind the text */
   border-radius: 2px;
@@ -59,13 +84,13 @@ body{font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvet
 /* For QA items keep the question content centered but ensure clickable area remains full-width */
 .qa ul{display:block}
 .qa-item{padding:12px 0}
-.qa-q{display:block}
+.qa-q{display:block; font-family: 'Brandon Grotesque'}
 
 /* RSVP form: center labels and stack inputs full width for a clean centered form */
 .rsvp-form label{align-items:center;text-align:center}
 .rsvp-form input, .rsvp-form select{width:100%;max-width:420px;margin-left:auto;margin-right:auto}
 
-.details h2, .qa h2, .files h2, .rsvp h2{font-family:'Playfair Display', serif;margin:0 0 12px 0;text-align:center}
+.details h2, .qa h2, .files h2, .rsvp h2{font-family:'Brandon Grotesque', serif;margin:0 0 12px 0;text-align:center}
 .details p{color:var(--muted);margin:8px 0}
 .note{font-style:italic;color:#555}
 
@@ -112,7 +137,7 @@ body{font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvet
   display: inline-block;
 }
 .footer-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Crake', serif;
   font-size: 3rem;
   color: var(--accent);
   margin-bottom: 0.5rem;
@@ -124,7 +149,7 @@ body{font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvet
   margin: 0.5rem auto 0.5rem auto;
 }
 .footer-date {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Crake', serif;
   font-size: 1.5rem;
   color: var(--accent);
   margin-top: 0.5rem;

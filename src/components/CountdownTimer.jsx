@@ -50,8 +50,15 @@ const Countdown = ({ targetDate }) => {
     fontWeight: "bold",
   };
 
-  const numberStyle = { fontSize: "1.5rem" };
-  const labelStyle = { fontSize: "0.8rem", marginTop: "4px" };
+  const numberStyle = { 
+    fontSize: "1.5rem",
+    fontFamily: "'Crake', serif"
+  };
+  const labelStyle = { 
+    fontSize: "0.8rem", 
+    marginTop: "4px",
+    fontFamily: "'Brandon Grotesque', sans-serif"
+  };
 
   return (
     <div style={clockStyle}>
